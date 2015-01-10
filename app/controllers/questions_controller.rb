@@ -42,8 +42,7 @@ class QuestionsController < ApplicationController
 
   def freshie
     @questions = Question.all
-    random_index = Random.rand(@questions.length)
-    @question = @questions[random_index]
+    @question = Freshie.fresh(@questions)
     render 'freshie'
   end
 

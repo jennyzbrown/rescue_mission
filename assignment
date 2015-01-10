@@ -1,0 +1,46 @@
+assignment
+
+POST QUESTION
+[X] I must be presented with errors if I fill out the form incorrectly
+
+VIEW ALL QUESTION
+[X] I must see the title of each question
+
+VIEW QUESTION ID PAGE
+[X] I must be able to get to this page from the questions index
+[X] I must see the question's title
+[X] I must see the question's description
+
+EDITING QUESTION
+[X] I must provide valid information
+[X] I must be presented with errors if I fill out the form incorrectly
+[X] I must be able to get to the edit page from the question details page
+
+
+DELETING QUESTION
+[x] I must be able delete a question from the question edit page
+[x] I must be able delete a question from the question details page
+[x] All answers associated with the question must also be deleted
+
+(note calling answers COMMENTS)
+ANSWERING QUESTION
+[x] I must be on the question detail page
+[x] I must be on the question detail page
+[x] I must only see answers to the question I'm viewing
+[X] I must provide a description that is at least 50 characters long
+
+ORDER:
+[] I must see all answers listed in order, most recent last
+[X] I must see questions listed in order, most recently posted first
+
+Redo Validations when done:
+[x] I must provide a title that is at least 40 characters long
+[x] I must provide a description that is at least 150 characters long
+[X] I must be presented with errors if I fill out the form incorrectly
+
+[X] Answers: I must provide a description that is at least 50 characters long
+[X] I must be presented with errors if I fill out the form incorrectly
+
+
+
+see non core

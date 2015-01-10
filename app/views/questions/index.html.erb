@@ -1,0 +1,10 @@
+<h1>Rescue Mission</h1>
+<%= link_to 'Post A New Question', new_question_path %>
+<br>
+
+<p><h2> Recent Questions: </h2></p>
+  <% @questions.each do |question| %>
+    <%= link_to "#{question.title}", question_path(question) %>
+    <br><%= link_to '*delete this question*', question_path(question), method: :delete, data: { confirm: 'Are you sure?' } %>
+    <br><br>
+  <% end %>

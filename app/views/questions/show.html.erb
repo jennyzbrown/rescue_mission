@@ -1,0 +1,27 @@
+<p><%= link_to 'Back to Questions', questions_path %></p>
+<p><strong>Title: </strong><%= @question.title%></p>
+<p><strong>Description: </strong><%= @question.description%></p>
+
+<%= link_to 'Edit Question', edit_question_path(@question) %>
+<%= link_to 'Delete Question', question_path(@question), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<h2>Answers: </h2>
+  <% @question.comments.each do |comment| %>
+    <p>
+      <strong>* </strong>
+      <%= comment.body %>
+      <%= link_to '-Delete this answer', question_comment_path(@question,comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>
+
+  <%= form_for([@question, @question.comments.build]) do |f| %>
+      <%= f.label :"Fill in answer: " %><br>
+      <%= f.text_area :body %>
+      <p><%= f.submit "Submit Answer"%></p>
+
+  <% end %>
+
+
+
+
+
+
